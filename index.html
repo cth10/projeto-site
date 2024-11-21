@@ -1,24 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso em Vídeo</title>
+    <title>Hatsune Miku Fan Site</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
     <header>
-        <h1>Cursos gratuitos</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introdução</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#interacao">Interação</a></li>
+            </ul>
+        </nav>
+        <h1>Hatsune Miku</h1>
     </header>
-    <article>
-        <h2>Curso de HTML5 com CSS3</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, rerum alias. Quidem asperiores, voluptatem sed excepturi quisquam recusandae praesentium natus suscipit, esse dicta neque laudantium exercitationem nam qui ab autem.</p>
-    </article>
-    <article>
-        <h2>Curso de Javascript</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus molestiae, recusandae a aliquid asperiores voluptas non delectus nobis, consectetur quos dolorem debitis corrupti sapiente dicta distinctio modi. Quae, minus ipsam!</p>
-    </article>
-  </main>  
+    <main>
+        <section id="intro" class="intro">
+            <img src="https://example.com/hatsune-miku.jpg" alt="Hatsune Miku">
+            <p>Hatsune Miku é uma personagem vocaloid desenvolvida pela Crypton Future Media. Ela é conhecida por suas músicas e performances virtuais, encantando fãs em todo o mundo com sua voz única e aparência icônica.</p>
+        </section>
+        <section id="galeria" class="media">
+            <h2>Galeria</h2>
+            <div class="gallery-container">
+                <img src="https://example.com/miku-gif.gif" alt="Hatsune Miku GIF">
+                <video controls>
+                    <source src="https://example.com/miku-video.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+        </section>
+        <section id="interacao" class="interactive">
+            <h2>Interaja com Hatsune Miku</h2>
+            <button id="greetButton">Cumprimentar Miku</button>
+            <p id="greetMessage"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Hatsune Miku Fan Site</p>
+    </footer>
+    <script>
+        document.getElementById('greetButton').addEventListener('click', function() {
+            document.getElementById('greetMessage').innerText = 'Olá! Eu sou Hatsune Miku!';
+        });
+    </script>
 </body>
 </html>
