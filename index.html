@@ -1,24 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso em Vídeo</title>
+    <title>Hatsune Miku</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-  <main>
     <header>
-        <h1>Título do site</h1>
+        <h1>Hatsune Miku</h1>
     </header>
-    <article>
-        <h2>Artigo 001</h2>
-        <p>Texto Artigo 001</p>
-    </article>
-    <article>
-        <h2>Artigo002</h2>
-        <p>Texto Artigo 002</p>
-    </article>
-  </main>  
+    <main>
+        <section class="intro">
+            <img src="https://example.com/hatsune-miku.jpg" alt="Hatsune Miku">
+            <p>Hatsune Miku é uma personagem vocaloid desenvolvida pela Crypton Future Media. Ela é conhecida por suas músicas e performances virtuais.</p>
+        </section>
+        <section class="media">
+            <h2>Galeria</h2>
+            <img src="https://example.com/miku-gif.gif" alt="Hatsune Miku GIF">
+            <video controls>
+                <source src="https://example.com/miku-video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Hatsune Miku Fan Site</p>
+        // Generate hatsune Miku interative footer
+    <div class="interactive-footer">
+      <h3>Interaja com Hatsune Miku</h3>
+      <button id="greetButton">Cumprimentar Miku</button>
+      <p id="greetMessage"></p>
+    </div>
+    <script>
+      document.getElementById('greetButton').addEventListener('click', function() {
+        document.getElementById('greetMessage').innerText = 'Olá! Eu sou Hatsune Miku!';
+      });
+    </script>
+    </footer>
 </body>
 </html>

@@ -1,17 +1,49 @@
-{
-    font-family: Arial;
-    font-size: 16px;
-}
-
-
 body {
-    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-main {
-    background-color: white;
-    width: 500px;
-    margin: auto;
-    padding: 10px;
-    box-shadow: 3px 3px 5px black;
+header {
+    background-color: #ffccff;
+    padding: 20px;
+    text-align: center;
 }
+
+h1 {
+    color: #ff69b4;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.media {
+    text-align: center;
+    padding: 20px;
+}
+
+.media img, .media video {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #ffccff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
